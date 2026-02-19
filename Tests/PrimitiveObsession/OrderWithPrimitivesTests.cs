@@ -45,10 +45,12 @@ namespace PrimitiveObsession.Tests
 
             var serialized = JsonConvert.SerializeObject(email);
 
+            //Should be a simple string, not something like {value:"email"}
             Assert.Equal(primitiveEmail, serialized);
 
             var deserialized = JsonConvert.DeserializeObject<CustomerEmail>(serialized);
 
+            //Equality comparison should be by value not by reference.
             Assert.Equal(email, deserialized);
         }
     }
