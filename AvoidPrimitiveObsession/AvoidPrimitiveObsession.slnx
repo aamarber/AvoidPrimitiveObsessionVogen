@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../Tests/PrimitiveObsession.Tests.csproj" />
+  <Project Path="AvoidPrimitiveObsession.csproj" />
+</Solution>
